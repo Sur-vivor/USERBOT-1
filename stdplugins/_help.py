@@ -23,7 +23,7 @@ async def _(event):
         s_help_string = borg._plugins[splugin_name].__doc__
     else:
         s_help_string = "****:"
-    help_string = """@UniBorg\n**ചക്രവർത്തി**\n**Verified Account**: ✅\n
+    help_string = """@UniBorg\n**🤴꧁𓆩✰ചക്രവർത്തി✰𓆪꧂🍀✋️☺️**\n🔖ID: 1085555854\n🔲Username: @PRINCE_OF_LOVE_WORLD\n🇮🇳Country : God's own country..🌴\nVerified Account: ✅\n
 PYTHON  {}
 TElETHON {}
  
