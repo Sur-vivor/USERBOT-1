@@ -23,11 +23,11 @@ async def _(event):
         s_help_string = borg._plugins[splugin_name].__doc__
     else:
         s_help_string = "****:"
-    help_string = """@UniBorg ( **Custom Built By** @NeoMatrix90 ) \n**Verified Account**: ✅\n**DESCRIPTION**: https://magicalpepewillguideyou.com\n
-Pithun {}
-Talethrun {}
+    help_string = """@UniBorg\n**ചക്രവർത്തി**\n**Verified Account**: ✅\n
+PYTHON  {}
+TElETHON {}
  
-**Custom Built Fork**: https://github.com/prono69/PepeBot """.format(
+**Repository**: https://github.com/abbasmhdsalimzdx/userbot """.format(
         sys.version,
         __version__
     )
@@ -68,14 +68,14 @@ async def _(event):
     await event.edit("""Telethon UserBot powered by @UniBorg""")
 
 
-@borg.on(admin_cmd(pattern="nigga (.*)"))
+@borg.on(admin_cmd(pattern="syntax (.*)"))
 async def _(event):
     if event.fwd_from:
         return
     plugin_name = event.pattern_match.group(1)
     if plugin_name in borg._plugins:
         help_string = borg._plugins[plugin_name].__doc__
-        unload_string = f"Use `.unloda {plugin_name}` to remove this plugin.\n         © @kirito6969"
+        unload_string = f"Use `.unload {plugin_name}` to remove this plugin.\n         © @kirito6969"
         if help_string:
             plugin_syntax = f"Syntax for plugin **{plugin_name}**:\n\n{help_string}\n{unload_string}"
         else:
